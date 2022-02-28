@@ -1,0 +1,268 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+h1,h2,h3,h4,h5{
+  line-height: 1.2;
+  font-weight: 500;
+}
+h1,h2{font-size: 38px;}
+h3{font-size: 38px;}
+img{
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+a{
+  color: inherit;
+  text-decoration: none;
+}
+.container-fluid{
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.container{
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dlfex{
+  display: flex;
+}
+.dBlock{
+  display: block !important;
+}
+.dInlineBlock{
+  display: inline-block !important;
+}
+.justifycontentcenter{
+  justify-content: center;
+}
+
+.btn{
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 65px;
+  font-weight: 600;
+  font-size: 18px;
+  border: 0;
+  cursor: pointer;
+}
+.btn.primary{
+  background-color: #ff6600;
+  color: #fff;
+}
+.actionBtn{
+  background-color: #e9e9ed;
+  color: #111;
+  font-weight: 400;
+}
+
+.actionBtn:hover{
+  background-color: #d0d0d7;
+}
+.formControl{
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #111;
+  color: #fff;
+  border-radius: 3px;
+  border: 0;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.column{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+.text-center,
+.textCenter{
+  text-align: center;
+}
+.textOrange{
+  color: #FF7600;
+}
+.dualTitle{
+  font-size: 38px;
+}
+.dualTitle .small{
+  display: block;
+  font-size: 20px;
+}
+
+.grayBgContainer{
+  background-color: #cacaca;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.mb10{
+  margin-bottom: 10px;
+}
+.mb20{
+  margin-bottom: 20px;
+}
+.hero{
+  height: 350px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccc;
+}
+
+.hero h1{
+  margin-bottom: 0;
+  color: #111;
+}
+
+#menuToggler{
+  padding: 8px 10px;
+  color: #fff;
+  background-color: #ff6600;
+  border: 0;
+  font-size: 14px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.main{
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+}
+.leftSidebar{
+  flex: 0 0 25%;
+  max-width: 25%;
+  background-color: #124581;
+  padding: 25px 10px;
+}
+.rightContent{
+  flex: 0 0 75%;
+  max-width: 75%;
+  padding: 25px;
+}
+
+.sidebarMenuList{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: #bdbdbd;
+}
+.sidebarMenuList > li{
+  border-bottom: 1px solid #2b2b2b;
+}
+.sidebarMenuList a{
+  padding: 10px 15px;
+  display: inline-block;
+}
+
+.mainDashboardContent .btn{
+  margin-bottom: 20px;
+  width: 250px;
+}
+
+.dualColorBar{
+  width: 100%;
+  height: 25px;
+  position: relative;
+  background-color: red;
+}
+
+.dualColorBar::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: var(--per);
+  background-color: #111;
+}
+
+.evaluationTabWrpr{
+  display: flex;
+  margin-top: 25px;
+}
+.evaluationTabWrpr .tabBtn{
+  margin-right: 7px;
+  padding: 10px 25px;
+  background-color: #111;
+  border: 1px solid #111;
+  color: #fff;
+  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
+}
+.evaluationTabWrpr .tabBtn.active{
+  background-color: #fff;
+  color: #111;
+}
+
+.table{
+  width: 100%;
+  padding: 0;
+  border-collapse: collapse;
+}
+.table td, .table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table tr:nth-child(even){background-color: #f2f2f2;}
+
+.table tr:hover {background-color: #ddd;}
+
+.table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+.table .link{
+  padding: 0;
+  border: 0;
+  text-decoration: underline;
+  background-color: transparent;
+  font-weight: 600;
+  cursor: pointer;
+}
